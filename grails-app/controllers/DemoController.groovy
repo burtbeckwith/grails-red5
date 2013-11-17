@@ -1,0 +1,4 @@
+class DemoController {
+
+    def index = { }
+}
