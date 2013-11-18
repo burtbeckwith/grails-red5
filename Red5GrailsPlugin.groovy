@@ -49,7 +49,7 @@ class Red5GrailsPlugin {
  '''
 
     def loadAfter = ['core','hibernate','domainClass']
-	def watchedResources = "file:./grails-app/red5/*Red5App.groovy"
+    def watchedResources = "file:./grails-app/red5/*Red5App.groovy"
     def artefacts = [new Red5AppArtefactHandler()]
 
 
@@ -86,7 +86,7 @@ class Red5GrailsPlugin {
             virtualHosts="*,localhost, localhost:8080, 127.0.0.1:8080"
         }
 
-	}
+    }
 
 
 
