@@ -24,10 +24,10 @@
 
 def pluginsdir = "${basedir}/web-app/plugins".toString().replaceAll('\\\\','/')
 
-// ensure that there are 'red5' directory under application 'grails-app' and 
+// ensure that there are 'red5' directory under application 'grails-app' and
 // a streams directory under web-app
-Ant.mkdir(dir:"${basedir}/grails-app/red5")
-Ant.mkdir(dir:"${basedir}/web-app/streams")
-Ant.copy(toDir:"${basedir}/web-app/streams"){
-    fileset(dir:"${pluginsdir}/${fullPluginName}/streams", includes:"**")
+ant.mkdir(dir:"${basedir}/grails-app/red5")
+ant.mkdir(dir:"${basedir}/web-app/streams")
+ant.copy(toDir:"${basedir}/web-app/streams"){
+    fileset(dir:"${pluginsdir}/${fullPluginName}/streams")
 }

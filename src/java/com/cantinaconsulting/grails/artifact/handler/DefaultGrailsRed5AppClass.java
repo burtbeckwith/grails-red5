@@ -17,23 +17,17 @@
 */
 
 /**
- * Created by IntelliJ IDEA.
- * User: mchisholm
- * Date: Nov 9, 2007
- * To change this template use File | Settings | File Templates.
+ * @author mchisholm
  */
 package com.cantinaconsulting.grails.artifact.handler;
 
 import org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass;
 
-
 public class DefaultGrailsRed5AppClass extends AbstractInjectableGrailsClass implements GrailsRed5AppClass, GrailsRed5AppClassProperty {
-	
+
 	public static final String RED5APP = "Red5App";
 
-	public DefaultGrailsRed5AppClass(Class clazz) {
+	public DefaultGrailsRed5AppClass(Class<?> clazz) {
 		super(clazz, RED5APP);
-
 	}
-
 }

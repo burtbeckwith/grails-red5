@@ -17,13 +17,9 @@
 */
 
 /**
- * Created by IntelliJ IDEA.
- * User: mchisholm
- * Date: Nov 9, 2007
- * To change this template use File | Settings | File Templates.
+ * @author mchisholm
  */
 package com.cantinaconsulting.grails.artifact.handler;
 
 public interface GrailsRed5AppClassProperty {
-
 }

@@ -17,10 +17,7 @@
 */
 
 /**
- * Created by IntelliJ IDEA.
- * User: mchisholm
- * Date: Nov 9, 2007
- * To change this template use File | Settings | File Templates.
+ * @author mchisholm
  */
 
 package com.cantinaconsulting.grails.artifact.handler;
@@ -31,12 +28,11 @@ public class Red5AppArtefactHandler extends ArtefactHandlerAdapter {
 
     public static final String TYPE = "Red5App";
 
-
     public Red5AppArtefactHandler() {
         super(TYPE, GrailsRed5AppClass.class, DefaultGrailsRed5AppClass.class, null);
     }
 
-    public boolean isArtefactClass( Class clazz ) {
+    public boolean isArtefactClass(Class clazz) {
         if(clazz == null) return false;
         return clazz.getName().endsWith(DefaultGrailsRed5AppClass.RED5APP);
     }

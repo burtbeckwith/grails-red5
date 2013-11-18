@@ -24,14 +24,11 @@
 
 import org.codehaus.groovy.grails.commons.GrailsClassUtils as GCU
 
-Ant.property(environment:"env")
-grailsHome = Ant.antProject.properties."env.GRAILS_HOME"
+includeTargets << grailsScript('_GrailsInit')
+includeTargets << grailsScript('CreateIntegrationTest')
 
-includeTargets << new File ( "${grailsHome}/scripts/Init.groovy" )
-includeTargets << new File( "${grailsHome}/scripts/CreateIntegrationTest.groovy")
-
-task ('default': "Creates a new Red5 app") {
-    depends(checkVersion)
+target(createRed5App: "Creates a new Red5 app") {
+	depends(checkVersion)
 
 	typeName = "Red5App"
 	artifactName = "Red5App"
@@ -40,3 +37,5 @@ task ('default': "Creates a new Red5 app") {
 	createArtifact()
 	createTestSuite()
 }
+
+setDefaultTarget 'createRed5App'
