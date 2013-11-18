@@ -1,0 +1,6 @@
+*.log
+/target
+grails-red5-*.zip
+grails-red5-*.zip.sha1
+plugin.xml
+web-app/WEB-INF
