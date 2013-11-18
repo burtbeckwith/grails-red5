@@ -38,7 +38,7 @@ class Red5GrailsPlugin {
         def title = "Provides tools to host and manage video with grails"
         def documentation = "http://www.cantinaconsulting.com/grails-plugins/"
         def description = '''\
- This plugin is written for the Groovy on Grails web application framework, and intends to make it relatively easy to use the Red5 functionality within Grails.  The goals of this plugin are as follows:
+ This plugin is written for the Grails web application framework, and intends to make it relatively easy to use the Red5 functionality within Grails.  The goals of this plugin are as follows:
 
     * Provide an easy mechanism to develop new Red5 applications in Grails
     * Allow Red5 applications to use the GORM
